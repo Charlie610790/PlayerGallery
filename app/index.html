@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Red Sox Players</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="header"></div>
+            <div class="tablesContainer">
+                <div class="centerContainer">
+                    <div class="editContainer"></div>
+                    <div class="activeRosterContainer">
+                        <div class="activeRoster">Active Roster</div>
+                        <div class="activeContainer" style="overflow-y:scroll;"></div>
+                    </div>
+                    <div class="injuredListContainer">
+                        <div class="injuredPlayer">Injured Players</div>
+                        <div class="injuredContainer" style="overflow-y:scroll;"></div>
+                    </div>
+                    <div class="aaaListContainer" style="overflow-y:scroll;">
+                        <div class="aaaPlayer">AAA Players</div>
+                        <div class="aaaContainer" style="overflow-y:scroll;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="MainFooter">
+                <div class="copyright">&#169; 2014 Charles M. Jones</div>
+                <div class="footer"></div>
+                <div class="redSox">Go Red Sox !!!!!</div>
+            </div>
+        </div>
+
+
+         <script type="text/template" class="thumbnail-template">
+            <a href='/#players/<%= _id %>'><img src="<%= url %>" width="180" height="135"/></a><BR><div class="playerName"><%= comment %></div>
+        </script>
+
+        <script type="text/template" class="detail-view-template">
+            <img src="<%= url %>" width="370" height="300" class="editImage">
+            <div class="placeholderImage"></div>
+            <input class="url-input" value="<%= url %>" placeholder="Enter a url...">
+            <input class="name-input" value="<%= comment %>" placeholder="Enter a name...">
+            <div>
+                <div class="newButton">New</div>
+                <div class="saveButton">Save</div>
+                <div class="deleteButton">Delete</div>
+                <div class="moveButtons">Enable/Disable Players</div>
+                
+                <div class="moveToInjuredButton">Put On DL</div>
+                <div class="moveToAAAButton">Send Down To AAA</div>
+                <div class="moveToActiveButton">Move To Active Roster</div>
+                <div class="moveToActiveDLButton">Active/DL</div>
+
+
+            </div>
+            <div class="status"></div>
+            <div class="dlCollectionButoon">Show DL List</div>
+            <div class="aaaCollectionButton">Show AAA List</div>
+            <div class="activeCollectionButton">Show Active List</div>
+            <div class="resetCollectionButton">Reset</div>
+
+
+        </script>
+ 
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
+        <script src="../bower_components/backbone/backbone.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+ 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+ 
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/detailview.js"></script>
+        <script src="scripts/router.js"></script>
+        <script src="scripts/main.js"></script>
+
+        
+        <!-- endbuild -->
+</body>
+</html>
