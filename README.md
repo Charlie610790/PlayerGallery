@@ -6,7 +6,7 @@ Image Gallery Using Backbone Model, Collection, and View
 Using contructors to create player models and move them between different collections.
 
 Below is a link to the live page:<BR>
-http://charlie610790.github.io/ImageGallery/
+http://charlie610790.github.io/PlayerGallery/
 
 Tools Used:<BR>
 Backbone, HTML, CSS<BR>
