@@ -68,20 +68,37 @@ body {
 }
 
 .header {
+    margin: 0px auto;
     display: block;
     text-align: center;
-    color: #ffffff;
-    font-family: Helvetica;
-    margin-bottom: 10px;
     width: 630px;
     height: 200px;
     background-image: url("http://i55.photobucket.com/albums/g160/truthserum607/sigs/Boston_RedSox.png");
     background-size:630px 200px;
-    margin-left: 200px;
+}
+
+.bottomFooter {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+}
+
+.middleContainer {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    min-width: 1100px;
 }
 
 .centerContainer {
     display: block;
+    width: 100%;
+}
+
+.tablesContainer {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
 }
 
 .thumbnail {
@@ -101,10 +118,7 @@ body {
     min-width: 610px;
 }
 
-.tablesContainer {
-    margin: 0px auto;
 
-}
 
 .thumbnailContainer {
     display: inline-block;
@@ -115,7 +129,6 @@ body {
 }
 
 .editContainer {
-    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: #ffffff;
@@ -125,7 +138,6 @@ body {
 }
 
 .activeRosterContainer {
-    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -148,7 +160,6 @@ body {
 }
 
 .injuredListContainer {
-    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -171,7 +182,6 @@ body {
 }
 
 .aaaListContainer {
-    float: left;
     display: inline-block;
     vertical-align: top;
     background-color: white;
@@ -496,7 +506,7 @@ input {
     height: 75px;
     vertical-align: top;
     font-size: 0.750em;
-    margin-left: 300px;
+    margin-left: -40px;
 }
 
 .redSox {
@@ -510,60 +520,60 @@ input {
     font-size: 0.750em;
 }
 
-@media screen and (max-width: 1025px) {
-    .aaaListContainer {
-        display: none;
-    }
+// @media screen and (max-width: 1025px) {
+//     .aaaListContainer {
+//         display: none;
+//     }
 
-    .aaaCollectionButton {
-        display: inline-block;
-    }
+//     .aaaCollectionButton {
+//         display: inline-block;
+//     }
 
-    // .resetCollectionButton {
-    //     display: inline-block;
-    // }
+//     // .resetCollectionButton {
+//     //     display: inline-block;
+//     // }
 
-    .header {
-        margin-left: 80px;
-    }
+//     .header {
+//         margin-left: 80px;
+//     }
 
-    .copyright {
-        margin-left: 195px;
-    }
-}
+//     .copyright {
+//         margin-left: 195px;
+//     }
+// }
 
-@media screen and (max-width: 815px) {
-    .injuredListContainer {
-        display: none;
-    }
+// @media screen and (max-width: 815px) {
+//     .injuredListContainer {
+//         display: none;
+//     }
 
-    .dlCollectionButoon {
-        display: inline-block;
-    }
+//     .dlCollectionButoon {
+//         display: inline-block;
+//     }
 
-    .header {
-        margin-left: 0px;
-    }
+//     .header {
+//         margin-left: 0px;
+//     }
 
-    .copyright {
-        margin-left: 90px;
-    }
-}
+//     .copyright {
+//         margin-left: 90px;
+//     }
+// }
 
-@media screen and (max-width: 605px) {
-    .activeRosterContainer {
-        display: none;
-    }
+// @media screen and (max-width: 605px) {
+//     .activeRosterContainer {
+//         display: none;
+//     }
 
-    .header {
-        margin-left: 0px;
-        width: 400px;
-        height: 80px;
-        background-image: url("http://i55.photobucket.com/albums/g160/truthserum607/sigs/Boston_RedSox.png");
-        background-size: 400px 80px;
-    }
+//     .header {
+//         margin-left: 0px;
+//         width: 400px;
+//         height: 80px;
+//         background-image: url("http://i55.photobucket.com/albums/g160/truthserum607/sigs/Boston_RedSox.png");
+//         background-size: 400px 80px;
+//     }
 
-    .MainFooter {
-        display: none;
-    }
-}
+//     .MainFooter {
+//         display: none;
+//     }
+// }
